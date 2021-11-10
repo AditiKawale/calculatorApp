@@ -11,16 +11,19 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity{
 
 
+    private EditText et1,et2,et3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EditText et1=(EditText) findViewById(R.id.editTextNumber);
-        EditText et2=(EditText) findViewById(R.id.editTextNumber2);
-        EditText et3=(EditText) findViewById(R.id.editTextNumber3);
+         et1 = (EditText) findViewById(R.id.editTextNumber);
+         et2 = (EditText) findViewById(R.id.editTextNumber2);
+         et3 = (EditText) findViewById(R.id.editTextNumber3);
 
-        public void add(View view){
+
+    }
+        public void add(View v){
 
             
             int n1=Integer.parseInt(et1.getText().toString());
@@ -67,10 +70,8 @@ public class MainActivity extends AppCompatActivity{
 
 
 
-        }
-
-
-    }
-
-
 }
+
+
+
+
